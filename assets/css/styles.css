@@ -224,7 +224,9 @@ img {
 }
 
 /* Change background header */
-
+.scroll-header {
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 /*=============== HOME ===============*/
 .home-container {
@@ -332,8 +334,79 @@ img {
   justify-items: center;
 }
 
-/*=============== BUTTONS ===============*/
+.home-scroll-name {
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg);
+}
 
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.button-ghost {
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color)
+}
+
+.button-ghost:hover {
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
+}
+
+/*=============== BUTTONS ===============*/
+.about-container {
+  row-gap: 2.5rem;
+}
+
+.about-img {
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.about-box {
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+
+}
+
+.about-icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about-title {
+  font-size: var(--small-font-size);
+}
+
+.about-subtitle {
+  font-size: var(--tiny-font-size);
+}
+
+.about-description {
+  margin-bottom: 2rem;
+
+}
 
 /*=============== ABOUT ===============*/
 
