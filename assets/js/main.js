@@ -125,3 +125,13 @@ themeButton.addEventListener('click', () => {
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal(`.home-data`)
+sr.reveal(`.home-handle`, {delay: 700})
+sr.reveal(`.home-social, .home-scroll`, {delay: 900, origin: 'bottom'})
